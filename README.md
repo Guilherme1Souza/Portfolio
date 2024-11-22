@@ -6,11 +6,9 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 Node.js (versão LTS recomendada)
 npm (gerenciador de pacotes do Node.js)
-Passo a Passo
 
-Instale as Dependências
 
-Instale todas as dependências do projeto usando o comando:
+Instale todas as dependências de Node_modules do projeto usando o comando:
 npm install
 
 Instale o pacote do styled-components, caso necessário:
