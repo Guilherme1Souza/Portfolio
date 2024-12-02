@@ -5,7 +5,7 @@ export const Navegação = styled.nav`
     display: flex;
     height: 100px;
     align-items: center;
-    background-color: ${({ theme }) => theme.COLORS.TEXT};
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
 
     .nav-list {
       display: flex;
@@ -19,7 +19,7 @@ export const Navegação = styled.nav`
     .nav-list a {
       display: flex;
       font-size: 15px;
-      color: ${({ theme }) => theme.COLORS.BACKGROUND};
+      color: ${({ theme }) => theme.COLORS.TEXT};
       padding-block: 16px;
       text-decoration: none;
       text-transform: uppercase;
