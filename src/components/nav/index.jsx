@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Navegação } from "./style";
 
 export function Nav() {
@@ -6,11 +7,11 @@ export function Nav() {
                 <header className="header">
                     <nav className="nav">
                         <ul className="nav-list">
-                            <li><a className="nav-a-list" href="#home">Inicio</a></li>
-                            <li><a className="nav-a-list" href="#about">Sobre</a></li>
-                            <li><a className="nav-a-list" href="#">Experiências</a></li>
-                            <li><a className="nav-a-list" href="#project">Projetos</a></li>
-                            <li><a className="nav-a-list" href="#contact">Contato</a></li>
+                            <li><Link to="/" className="nav-a-list">Inicio</Link></li>
+                            <li><Link to="/about" className="nav-a-list">Sobre</Link></li>
+                            <li><Link to ="/experience" className="nav-a-list" >Experiência</Link></li>
+                            <li><Link to ="/projects" className="nav-a-list">Projetos</Link></li>
+                            <li><Link to="/contact" className="nav-a-list" >Contato</Link></li>
                         </ul>
                     </nav>
                 </header>
