@@ -61,15 +61,15 @@ export const ButtonDownload = styled.button`
   align-items: center;
   justify-content: center;
   border: 2px solid ${({ theme }) => theme.COLORS.TEXT};
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND}; /* Cor de fundo personalizada */
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND}; 
   color: ${({ theme }) => theme.COLORS.TEXT};
   padding: 12px 24px;
   margin-left: 250px;
   cursor: pointer;
-  border-radius: 50px; /* Bordas arredondadas */
+  border-radius: 50px; 
   font-size: 18px;
   font-weight: bold;
-  transition: all 0.3s ease; /* Transição suave para os efeitos */
+  transition: all 0.3s ease; 
 
   &:hover {
     background-color: ${({ theme }) => theme.COLORS.BLUE}; 
