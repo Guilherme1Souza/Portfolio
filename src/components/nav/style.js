@@ -18,7 +18,7 @@ export const Navegação = styled.nav`
       list-style: none;
 
       @media (min-width: ${breakpoints.xg}) {
-        margin-left: 1200px;
+        margin-left: 1050px;
         padding-right: 20px;
       }
 
