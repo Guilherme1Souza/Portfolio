@@ -64,17 +64,11 @@ export const ProfileInfo = styled.div`
     }
   }
 
-  @media(max-width: ${breakpoints.g}) {
-   
-    
-
-  }
-
 
   @media (max-width: ${breakpoints.m})  {
     flex-direction: column-reverse;
     margin-top: 50px;
-    margin-left: 180px;
+    margin-left: 200px;
     gap: 50px;
 
     > img {
@@ -86,7 +80,7 @@ export const ProfileInfo = styled.div`
       align-items: center;
       line-height: 40px;
       font-size: 26px;
-      margin-left: 10px;
+      margin-left: 20px;
     }
 
     p {
@@ -119,10 +113,7 @@ export const ProfileInfo = styled.div`
     p {
       font-size: 23px;
     }
-  }
-
-  
- 
+  } 
 `;  
 
 
@@ -160,7 +151,7 @@ export const ButtonDownload = styled.button`
     font-size: 24px; 
   }
   @media (max-width: ${breakpoints.m}) {
-    margin-left: 215px;
+    margin-left: 238px;
     margin-top: 15px;
     width: 180px;
     height: 50px;
