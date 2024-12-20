@@ -33,7 +33,7 @@ export const Buttons = styled.div`
 
   @media (max-width: ${breakpoints.p}) {
     display: flex;
-    margin-left: -150px;
+    margin-left: -75px;
     padding: 0 20px 0 50px;
   }
 `;
