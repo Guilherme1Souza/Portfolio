@@ -74,13 +74,14 @@ export const ProfileInfo = styled.div`
     > img {
       width: 240px;
       height: 240px;
+      margin-left: 5px;
     }
 
     div {
       align-items: center;
       line-height: 40px;
       font-size: 26px;
-      margin-left: 20px;
+      margin-left: 10px;
     }
 
     p {
