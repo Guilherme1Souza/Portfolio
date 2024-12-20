@@ -23,17 +23,17 @@ export const Navegação = styled.nav`
       }
 
       @media (max-width: ${breakpoints.xg}) {
-        margin-left: 950px;
+        margin-left: 850px;
         padding-right: 20px;
       }
 
       @media (max-width: ${breakpoints.gg}) {
-        margin-left: 450px;
+        margin-right: 400px;
         padding-right: 20px;
       }
 
       @media (max-width: ${breakpoints.g}) {
-       margin-left: 350px;
+       margin-left: 700px;
       }
 
       @media (max-width: ${breakpoints.m}) {
@@ -94,7 +94,7 @@ export const Navegação = styled.nav`
 
   .hamburger-menu {
     display: none;
-    font-size: 3.5rem;
+    font-size: 2rem;
     cursor: pointer;
     z-index: 1000;
 

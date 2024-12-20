@@ -1,7 +1,13 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/break";
 
 export const HeroContainer = styled.aside`
 display: flex;
+
+@media (max-width: ${breakpoints.p}) {
+  display: flex;
+  justify-content: center;
+}
 `
 
 export const Buttons = styled.div`
@@ -20,10 +26,16 @@ export const Buttons = styled.div`
   a:hover {
     color: ${({ theme }) => theme.COLORS.BLUE};
   }
+
+  @media (max-width: ${breakpoints.p}) {
+    display: flex;
+    margin-left: -90px;
+    padding: 0 20px 0 50px;
+  }
 `;
 
 export const Profile = styled.div`
-
+ 
 `;
 
 export const ProfileInfo = styled.div`
@@ -43,16 +55,64 @@ export const ProfileInfo = styled.div`
     flex-direction: column;
     line-height: 104px;
 
-    span {
-      font-size: 55px;
-      color: ${({ theme }) => theme.COLORS.TEXT};
-    }
-
-    strong {
-      font-size: 68px;
+    h2, p {
       color: ${({ theme }) => theme.COLORS.TEXT};
     }
   }
+
+  @media(max-width: ${breakpoints.g}) {
+
+  }
+
+
+  @media (max-width: ${breakpoints.m})  {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    gap: 50px;
+
+    > img {
+      width: 240px;
+      height: 240px;
+    }
+
+    div {
+      align-items: center;
+      line-height: 40px;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+  }
+
+  @media (max-width: ${breakpoints.p}) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+    margin-left: 60px;
+    margin-top: 50px;
+    gap: 25px;
+    
+    > img {
+      width: 180px;
+      height: 180px;
+    }
+
+    div {
+      line-height: 30px;
+      align-items: center;
+    }
+
+    p {
+      font-size: 23px;
+    }
+  }
+
+  
+ 
 `;  
 
 
@@ -84,10 +144,23 @@ export const ButtonDownload = styled.button`
 
   p {
     margin-left: 8px;
-    font-size: 16px; 
   }
 
   svg {
     font-size: 24px; 
   }
+  @media (max-width: ${breakpoints.m}) {
+    margin-left: 270px;
+    margin-top: 15px;
+  }
+
+  @media (max-width: ${breakpoints.p}) {
+    font-size: 9px;
+    height: 50px;
+    width: 140px;
+    margin-left: 65px;
+    margin-top: 20px;
+  }
+
+ 
 `;

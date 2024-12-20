@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineDownloading } from "react-icons/md";
 
-export function Hero() {
+export function Hero({title, children}) {
     return (
         <HeroContainer>
                <Buttons>
@@ -21,8 +21,8 @@ export function Hero() {
             <Profile>
                 <ProfileInfo>
                     <div>
-                        <span>Bem-vindo</span>
-                        <strong>Guilherme Souza</strong>
+                        <h2>{title}</h2>
+                           {children}
                     </div>
                     <img
                         src="https://github.com/Guilherme1Souza.png"
