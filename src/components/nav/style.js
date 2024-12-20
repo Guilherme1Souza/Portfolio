@@ -33,7 +33,7 @@ export const Navegação = styled.nav`
       }
 
       @media (max-width: ${breakpoints.g}) {
-       margin-left: 700px;
+       margin-left: 1550px;
       }
 
       @media (max-width: ${breakpoints.m}) {

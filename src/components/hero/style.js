@@ -27,9 +27,13 @@ export const Buttons = styled.div`
     color: ${({ theme }) => theme.COLORS.BLUE};
   }
 
+  @media (max-width: ${breakpoints.m}) {
+    margin-left: 50px;
+  }
+
   @media (max-width: ${breakpoints.p}) {
     display: flex;
-    margin-left: -90px;
+    margin-left: -150px;
     padding: 0 20px 0 50px;
   }
 `;
@@ -61,6 +65,8 @@ export const ProfileInfo = styled.div`
   }
 
   @media(max-width: ${breakpoints.g}) {
+   
+    
 
   }
 
@@ -68,6 +74,7 @@ export const ProfileInfo = styled.div`
   @media (max-width: ${breakpoints.m})  {
     flex-direction: column-reverse;
     margin-top: 50px;
+    margin-left: 180px;
     gap: 50px;
 
     > img {
@@ -78,11 +85,12 @@ export const ProfileInfo = styled.div`
     div {
       align-items: center;
       line-height: 40px;
-      font-size: 24px;
+      font-size: 26px;
+      margin-left: 10px;
     }
 
     p {
-      font-size: 20px;
+      font-size: 22px;
     }
 
   }
@@ -93,17 +101,19 @@ export const ProfileInfo = styled.div`
     justify-content: start;
     align-items: start;
     margin-left: 60px;
-    margin-top: 50px;
+    margin-top: 60px;
     gap: 25px;
     
     > img {
-      width: 180px;
-      height: 180px;
+      width: 170px;
+      height: 170px;
+
     }
 
     div {
       line-height: 30px;
       align-items: center;
+      margin-left: 0px;
     }
 
     p {
@@ -150,15 +160,18 @@ export const ButtonDownload = styled.button`
     font-size: 24px; 
   }
   @media (max-width: ${breakpoints.m}) {
-    margin-left: 270px;
+    margin-left: 215px;
     margin-top: 15px;
+    width: 180px;
+    height: 50px;
+    font-size: 12px;
   }
 
   @media (max-width: ${breakpoints.p}) {
     font-size: 9px;
     height: 50px;
     width: 140px;
-    margin-left: 65px;
+    margin-left: 80px;
     margin-top: 20px;
   }
 
