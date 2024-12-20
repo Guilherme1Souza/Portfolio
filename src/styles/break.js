@@ -1,17 +1,19 @@
 export const breakpoints = {
-    p: '480px',
-    m: '768px',
-    g: '1024px',
-    gg: '1280px',
-    xg: '1600px',
-    xgg: '1920px',
-  };
-  
-  export const media = {
-    p: `(max-width: ${breakpoints.p})`,
-    m: `(max-width: ${breakpoints.m})`,
-    g: `(max-width: ${breakpoints.g})`,
-    gg: `(max-width: ${breakpoints.gg})`,
-    xg: `(max-width: ${breakpoints.xg})`,
-  };
-  
+  xs: '460px', 
+  sm: '768px', 
+  md: '890px', 
+  lg: '1024px', 
+  xl: '1280px', 
+  xxl: '1600px', 
+  xxxl: '1920px', 
+};
+
+export const media = {
+  xs: `(max-width: ${breakpoints.xs})`,
+  sm: `(max-width: ${breakpoints.sm})`,
+  md: `(max-width: ${breakpoints.md})`,
+  lg: `(max-width: ${breakpoints.lg})`,
+  xl: `(max-width: ${breakpoints.xl})`,
+  xxl: `(max-width: ${breakpoints.xxl})`,
+  xxxl: `(max-width: ${breakpoints.xxxl})`,
+};

@@ -17,33 +17,37 @@ export const Navegação = styled.nav`
       margin-left: auto;
       list-style: none;
 
-      @media (min-width: ${breakpoints.xg}) {
-        margin-left: 1050px;
+      @media (max-width: ${breakpoints.xxxl}) {
+        margin-left: 1000px;
+      }
+
+      @media (max-width: ${breakpoints.xxl}) {
+        margin-left: 500px;
         padding-right: 20px;
       }
 
-      @media (max-width: ${breakpoints.xg}) {
-        margin-left: 850px;
+      @media (max-width: ${breakpoints.xl}) {
+        margin-left: 430px;
         padding-right: 20px;
       }
 
-      @media (max-width: ${breakpoints.gg}) {
-        margin-right: 400px;
+      @media (max-width: ${breakpoints.lg}) {
+        margin-left: 320px;
         padding-right: 20px;
       }
 
-      @media (max-width: ${breakpoints.g}) {
-       margin-left: 1550px;
+      @media (max-width: ${breakpoints.md}) {
+       margin-left: 150px;
       }
 
-      @media (max-width: ${breakpoints.m}) {
+      @media (max-width: ${breakpoints.sm}) {
         flex-direction: column;
         margin: 0 auto;
         gap: 60px;
         background: none;
       }
 
-      @media (max-width: ${breakpoints.p}) {
+      @media (max-width: ${breakpoints.xs}) {
         margin: 0 auto;
         gap: 50px;
         background: none;
@@ -79,13 +83,38 @@ export const Navegação = styled.nav`
       }
     }
 
-    @media (max-width: ${breakpoints.m}) {
+    @media (max-width: ${breakpoints.xxxl}){
+      li a {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: ${breakpoints.xl}) {
+      li a {
+          font-size: 18px;
+        }
+    }
+
+
+    @media (max-width: ${breakpoints.lg}) {
+      li a {
+          font-size: 14px;
+        }
+    }
+
+    @media (max-width: ${breakpoints.md}) {
+      li a {
+          font-size: 14px;
+        }
+    }
+
+    @media (max-width: ${breakpoints.sm}) {
       li a {
           font-size: 20px;
         }
      }
 
-    @media (max-width: ${breakpoints.p}) {
+    @media (max-width: ${breakpoints.xs}) {
       li a {
           font-size: 16px;
         }
@@ -102,7 +131,7 @@ export const Navegação = styled.nav`
       margin: 40px;
     }
 
-    @media (max-width: ${breakpoints.m}) {
+    @media (max-width: ${breakpoints.sm}) {
       display: block;
     }
 
@@ -113,7 +142,7 @@ export const Navegação = styled.nav`
     display: flex;
     justify-content: center;
 
-    @media (max-width: ${breakpoints.m}) {
+    @media (max-width: ${breakpoints.sm}) {
       position: fixed;
       top: 100px;
       left: -100%;
@@ -130,7 +159,7 @@ export const Navegação = styled.nav`
       }
     }
 
-    @media (max-width: ${breakpoints.p}) {
+    @media (max-width: ${breakpoints.xs}) {
       width: 50%;
       height: 60%;
     }
