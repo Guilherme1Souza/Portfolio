@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { breakpoints } from "../../styles/break";
 
 export const HeroContainer = styled.aside`
-display: flex;
-
-@media (max-width: ${breakpoints.xs}) {
   display: flex;
-  justify-content: center;
-}
-`
+
+  @media (max-width: ${breakpoints.xs}) {
+    display: flex;
+    justify-content: center;
+  }
+`;
 
 export const Buttons = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ export const Buttons = styled.div`
   }
   @media (max-width: ${breakpoints.xl}) {
     margin-top: 200px;
-    
+
     a {
       font-size: 22px;
     }
@@ -42,7 +42,7 @@ export const Buttons = styled.div`
 
   @media (max-width: ${breakpoints.lg}) {
     margin-top: 150px;
-    
+
     a {
       font-size: 22px;
     }
@@ -50,7 +50,7 @@ export const Buttons = styled.div`
 
   @media (max-width: ${breakpoints.md}) {
     margin-top: 120px;
-    
+
     a {
       font-size: 22px;
     }
@@ -58,7 +58,7 @@ export const Buttons = styled.div`
 
   @media (max-width: ${breakpoints.sm}) {
     margin-left: 50px;
-    
+
     a {
       font-size: 24px;
     }
@@ -75,15 +75,12 @@ export const Buttons = styled.div`
   }
 `;
 
-export const Profile = styled.div`
- 
-`;
+export const Profile = styled.div``;
 
 export const ProfileInfo = styled.div`
-    display: flex;
-    gap: 255px;
-    margin: 150px auto 0 250px;
-
+  display: flex;
+  gap: 255px;
+  margin: 150px auto 0 250px;
 
   > img {
     width: 256px;
@@ -96,7 +93,8 @@ export const ProfileInfo = styled.div`
     flex-direction: column;
     line-height: 104px;
 
-    h2, p {
+    h2,
+    p {
       font-size: 55px;
       color: ${({ theme }) => theme.COLORS.TEXT};
     }
@@ -108,65 +106,65 @@ export const ProfileInfo = styled.div`
     align-items: center;
 
     > img {
-    width: 296px;
-    height: 296px;
-    border-radius: 50%;
-  }
+      width: 296px;
+      height: 296px;
+      border-radius: 50%;
+    }
 
     > div {
-    display: flex;
-    flex-direction: column;
-    line-height: 104px;
+      display: flex;
+      flex-direction: column;
+      line-height: 104px;
 
-    h2, p {
-      font-size: 80px;
-      color: ${({ theme }) => theme.COLORS.TEXT};
+      h2,
+      p {
+        font-size: 80px;
+        color: ${({ theme }) => theme.COLORS.TEXT};
+      }
     }
-  }
   }
 
   @media (max-width: ${breakpoints.xxl}) {
-    margin: 120px auto 0 200px;
+    margin: 120px auto 0 150px;
     gap: 250px;
     align-items: center;
 
     > img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-  }
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
 
     > div {
-
-      h2, p {
-      font-size: 74px;
-      line-height: 100px;
-      width: 550px;
+      h2,
+      p {
+        font-size: 74px;
+        line-height: 100px;
+        width: 550px;
+      }
     }
   }
-}
 
-@media (max-width: ${breakpoints.xl}) {
-  margin: 120px auto 0 250px;
+  @media (max-width: ${breakpoints.xl}) {
+    margin: 120px auto 0 250px;
     gap: 105px;
     align-items: center;
 
     > img {
-    width: 240px;
-    height: 220px;
-    border-radius: 50%;
-  }
-    
+      width: 240px;
+      height: 220px;
+      border-radius: 50%;
+    }
+
     > div {
-
-     h2, p {
-    font-size: 55px;
-    line-height: 70px;
-    width: 450px;
-
+      h2,
+      p {
+        font-size: 55px;
+        line-height: 70px;
+        width: 450px;
+      }
+    }
   }
-  }
-}
 
   @media (max-width: ${breakpoints.lg}) {
     margin: 120px auto 0 120px;
@@ -174,97 +172,98 @@ export const ProfileInfo = styled.div`
     align-items: center;
 
     > img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
-    
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+
     > div {
-
-     h2, p {
-    font-size: 44px;
-    line-height: 70px;
-    width: 450px;
-
+      h2,
+      p {
+        font-size: 44px;
+        line-height: 70px;
+        width: 450px;
+      }
+    }
   }
-  }
-}
 
   @media (max-width: ${breakpoints.md}) {
-  display: flex;
-  justify-content: space-evenly;
-  line-height: 104px;
-  align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 104px;
+    align-items: center;
 
-  gap: 10px; 
-  margin: 80px auto 0 120px;
+    gap: 10px;
+    margin: 80px auto 0 120px;
 
-  > img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+    > img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+    }
+
+    > div {
+      h2,
+      p {
+        font-size: 36px;
+        line-height: 50px;
+        width: 450px;
+      }
+    }
   }
-
-  > div {
-    h2, p {
-    font-size: 36px;
-    line-height: 50px;
-    width: 450px;
-  }
-  }
-}
-
 
   @media (max-width: ${breakpoints.sm}) {
-  flex-direction: column-reverse;
-  margin-top: 50px;
-  margin-left: 200px;
-  gap: 50px;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    margin-left: 200px;
+    gap: 50px;
 
-  > img {
-    width: 240px;
-    height: 240px;
-    margin-left: 5px;
-  }
+    > img {
+      width: 240px;
+      height: 240px;
+      margin-left: 5px;
+    }
 
-  div {
-    align-items: center;
-    line-height: 40px;
-    font-size: 26px; 
-    margin-left: 10px;
+    div {
+      align-items: center;
+      line-height: 40px;
+      font-size: 26px;
+      margin-left: 10px;
 
-    h2, p {
-      font-size: 22px; 
-      width: auto;
+      h2,
+      p {
+        font-size: 22px;
+        width: auto;
+      }
     }
   }
-}
 
-@media (max-width: ${breakpoints.xs}) {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: start;
-  align-items: start;
-  margin-left: 60px;
-  margin-top: 60px;
-  gap: 25px;
+  @media (max-width: ${breakpoints.xs}) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+    margin-left: 60px;
+    margin-top: 60px;
+    gap: 25px;
 
-  > img {
-    width: 170px;
-    height: 170px;
-  }
+    > img {
+      width: 170px;
+      height: 170px;
+    }
 
-  div {
-    line-height: 30px;
-    align-items: center;
-    margin-left: 0px;
+    div {
+      line-height: 30px;
+      align-items: center;
+      margin-left: 0px;
 
-    h2, p {
-      font-size: 23px; 
-      width: auto;
+      h2,
+      p {
+        font-size: 23px;
+        width: auto;
+      }
     }
   }
-}
 `;
 
 export const ButtonDownload = styled.button`
@@ -272,25 +271,25 @@ export const ButtonDownload = styled.button`
   align-items: center;
   justify-content: center;
   border: 2px solid ${({ theme }) => theme.COLORS.TEXT};
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND}; 
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   color: ${({ theme }) => theme.COLORS.TEXT};
   padding: 12px 24px;
   margin-left: 250px;
   cursor: pointer;
-  border-radius: 50px; 
+  border-radius: 50px;
   font-size: 18px;
   font-weight: bold;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 
   &:hover {
-    background-color: ${({ theme }) => theme.COLORS.BLUE}; 
-    color: ${({ theme }) => theme.COLORS.WHITE}; 
+    background-color: ${({ theme }) => theme.COLORS.BLUE};
+    color: ${({ theme }) => theme.COLORS.WHITE};
     transform: scale(1.1);
   }
 
   &:focus {
-    outline: none; 
-    box-shadow: 0 0 5px ${({ theme }) => theme.COLORS.FOCUS_COLOR}; 
+    outline: none;
+    box-shadow: 0 0 5px ${({ theme }) => theme.COLORS.FOCUS_COLOR};
   }
 
   p {
@@ -298,10 +297,9 @@ export const ButtonDownload = styled.button`
   }
 
   svg {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
-  
   @media (max-width: ${breakpoints.xxxl}) {
     font-size: 26px;
     margin-left: 410px;
@@ -354,6 +352,4 @@ export const ButtonDownload = styled.button`
     margin-left: 72px;
     margin-top: 20px;
   }
-
- 
 `;
