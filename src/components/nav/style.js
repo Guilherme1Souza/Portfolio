@@ -85,7 +85,7 @@ export const Navegação = styled.nav`
 
     @media (max-width: ${breakpoints.xxxl}){
       li a {
-        font-size: 22px;
+        font-size: 18px;
       }
     }
 
@@ -167,12 +167,18 @@ export const Navegação = styled.nav`
 `;
 
 export const Overlay = styled.div`
-  display: block;
+  
+ 
+
+
+  @media (max-width: ${breakpoints.xs}) {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: block;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 998;
+  }
 `;

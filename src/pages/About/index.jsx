@@ -1,9 +1,10 @@
-import { AboutText } from "../../components/aboutText/AboutText";
+import { AboutText } from "../../components/aboutInfo/AboutText";
 
 export const About = () => {
   return (
     <>
-      <AboutText />
+      <AboutText title="Sobre mim">
+      </AboutText>
     </>
   );
 };
