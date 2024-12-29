@@ -1,42 +1,46 @@
 import { AboutTitle, AboutInfo } from "./style";
-import {Swiper, SwiperSlide} from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { useState, useEffect } from "react";
+import { Techs } from "../techsInfo/Techs";
 
 
-export function AboutText({title}) {
+export function AboutText({ title }) {
     const [slidePerView, setSlidePerview] = useState(1)
     const data = [
-        {id: '1', image: 'https://sujeitoprogramador.com/wp-content/uploads/2022/08/fullstack-blog.png'},
-        {id: '2', image: 'https://sujeitoprogramador.com/wp-content/uploads/2022/08/home.png'},
-        {id: '3', image: 'https://sujeitoprogramador.com/wp-content/uploads/2022/03/Frame-321.png'},
-        {id: '4', image: 'https://sujeitoprogramador.com/wp-content/uploads/2022/01/thumb-1.png'},
+        { id: '1', image: '/images/fotoperfil_one.jpg' },
+        { id: '2', image: '/images/fotoperfil_two.png' },
+        { id: '3', image: '/images/fotoperfil_three.jpg' },
+        { id: '4', image: '/images/fotoperfil_four.jpg' },
     ]
 
     return (
         <>
-        <AboutTitle>
-            <h2>{title}</h2>
-        </AboutTitle>
-        <AboutInfo>
-        <p className="textInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit impedit, iusto neque, laboriosam cupiditate quidem ducimus aliquid quis atque fuga sint maiores velit voluptates commodi fugiat eos dolorem nesciunt? Unde.</p>
+            <AboutTitle>
+                <h2>{title}</h2>
+            </AboutTitle>
+            <AboutInfo>
+                <p className="textInfo">Profissional encantado por criar soluções digitais que sejam intuitivas e visualmente atraentes, visando melhorar a experiência do usuário,
+                    determinado em resolver problemas.
+                    Atualmente trabalho na empresa Taxcel Soluções Fiscais como desenvolvedor front-end, onde atuo com desenvolvimento de novas funcionalidades com foco na melhoria contínua da experiência do usuário em nossos serviços, abaixo algumas tecnologias que tenho conhecimento:
+                </p>
 
-        <Swiper
-        slidesPerView={slidePerView}
-        navigation
-        >
-         {data.map( (item) => (
-            <SwiperSlide key={item.id}> 
-              <img
-              src={item.image}
-              alt="Slider"
-              className="slide-item"
-              />
-            </SwiperSlide>
-         ))}
-        </Swiper>
-        </AboutInfo>
+                <Swiper
+                    slidesPerView={slidePerView}
+                    navigation
+                >
+                    {data.map((item) => (
+                        <SwiperSlide key={item.id}>
+                            <img
+                                src={item.image}
+                                alt="Slider"
+                                className="slide-item"
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </AboutInfo>
+            <Techs />
         </>
-        
+
     );
-  };
-  
+};
