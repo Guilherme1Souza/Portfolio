@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
-import { App } from './app'; 
+import { App } from './routes/app.routes'; 
 import Global from './styles/global';
 import theme from './styles/theme';
 import { register } from 'swiper/element/bundle'
