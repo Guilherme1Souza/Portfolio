@@ -1,36 +1,46 @@
 import React, { useState } from 'react';
 import { ExperienceSection } from '../../components/ExperienceSection';
+import { TitlePrashes } from './style';
+
 
 export function ExperiencePage() {
   const experiences = [
     {
       id: 1,
-      title: 'Software Engineer',
-      description: 'Worked on developing full-stack applications.',
+      img: '/images/taxcel.png',
+      empresa: 'Taxcel Soluções Fiscais S.A',
+      date: '  09/2023 - Atual',
+      cargo: 'Desenvolvedor Front End Júnior',
       functions: [
-        'Developed front-end features using React.',
-        'Collaborated with backend team to integrate APIs.',
-        'Ensured responsive design for multiple devices.',
+        'Realizo a manutenção e sustentação do site oficial da empresa com foco',
+        'em melhorias contínuas de UX e na qualidade do código para otimizar a',
+        'experiência do usuário  e a eficiência do projeto.',
       ],
     },
     {
       id: 2,
-      title: 'Product Manager',
-      description: 'Led product development teams and managed roadmaps.',
+      img: '/images/pacaembu.png',
+      empresa: 'Pacaembu Autopecas LTDA',
+      date: '  10/2022 - 09/2023',
+      cargo: 'Auxiliar de Tecnologia da Informação',
       functions: [
-        'Coordinated with design and engineering teams.',
-        'Created product roadmaps and timelines.',
-        'Reviewed product performance and made improvements.',
+        'Atuei no desenvolvimento e implementação de novas features para a página de produtos, com foco',
+        'na criação de interfaces. Além disso, realizei o monitoramento de links, tanto da matriz quanto das ',
+        'filiais, utilizando ferramentas como Zabbix e Grafana. Outra parte importante do meu trabalho foi',
+        'a coleta e análise de requisitos para projetos, garantindo que as soluções fossem alinhadas com as',
+        'necessidades do negócio e do usuário.',
       ],
     },
     {
       id: 3,
-      title: 'UX/UI Designer',
-      description: 'Designed user interfaces with a focus on user experience.',
+      img: '/images/racoes.png',
+      empresa: 'Grupo Rações Reis',
+      date: ' 06/2020 - 10/2022',
+      cargo: 'Auxiliar Fiscal',
       functions: [
-        'Created wireframes and mockups.',
-        'Conducted user research and testing.',
-        'Collaborated with developers to implement designs.',
+        'Realizei o controle de notas de devolução por meio de planilhas em Excel, importando os dados',
+        'para o Power BI e apresentando os resultados em reuniões de fechamento, auxiliando a diretoria',
+        'na tomada de decisões com base nos resultados mensais.',
       ],
     },
   ];
@@ -43,12 +53,17 @@ export function ExperiencePage() {
 
   return (
     <div>
-      <h1>My Experiences</h1>
+      <TitlePrashes>
+        <h1>Experiências</h1>
+        <p>Para obter mais detalhes, selecione a empresa desejada</p>
+      </TitlePrashes>
+     
       <ExperienceSection
         experiences={experiences}
         onExperienceClick={handleExperienceClick}
         selectedExperience={selectedExperience}
       />
+
     </div>
   );
 }

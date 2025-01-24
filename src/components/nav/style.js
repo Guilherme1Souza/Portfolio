@@ -3,6 +3,8 @@ import { breakpoints } from '../../styles/break';
 
 export const Navegação = styled.nav`
   position: relative;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_TWO};
+  box-shadow: 4px 5px 8px ${({ theme }) => theme.COLORS.BOX_SHADOW};
 
   .nav {
     display: flex;
