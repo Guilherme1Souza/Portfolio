@@ -19,8 +19,6 @@ export default {
       OVERLAY: "rgba(0, 0, 0, 0.5)",
       
       BOX_SHADOW: "rgb(0, 0, 0)",
-      BOX_SHADOW_2: "rgb(39,39,42)",
-
      
     }
   }
