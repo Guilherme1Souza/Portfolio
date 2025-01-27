@@ -8,12 +8,25 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
         color: ${({ theme }) => theme.COLORS.WHITE};
+
+        background: linear-gradient(45deg,rgb(0, 0, 0), #327FC5);
+  background-size: 400% 400%;
+  animation: linearGradientAnimation 15s ease infinite;
 
         -webkit-font-smoothing: antialiased;
     }
-    
+    @keyframes linearGradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
     body, input, button, textarea {
         font-family: "Roboto Slab", serif;
         font-size: 16px;

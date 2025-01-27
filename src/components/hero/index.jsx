@@ -28,10 +28,6 @@ export function Hero({title, children}) {
                         src="https://github.com/Guilherme1Souza.png"
                         alt="Foto de Guilherme Souza" />
                 </ProfileInfo>
-                <ButtonDownload>
-                    <MdOutlineDownloading />
-                    <p>Download CV</p>
-                </ButtonDownload>
             </Profile>
         </HeroContainer>
     );
