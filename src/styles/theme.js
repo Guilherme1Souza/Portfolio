@@ -3,7 +3,7 @@ export default {
      
       
       BACKGROUND: "#18181B",
-      BACKGROUND_TWO: "rgb(32,32,37)",
+      BACKGROUND_TWO: "#202025",
 
       BORDER: "#27272A",
   

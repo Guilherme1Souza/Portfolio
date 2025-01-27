@@ -55,14 +55,15 @@ export const Navegação = styled.nav`
         background: none;
       }
 
-      li a {
+      li a, li button {
         color: ${({ theme }) => theme.COLORS.TEXT};
+        background: transparent;
+        border: none;
         text-decoration: none;
-        text-transform: uppercase;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
+        font-family: "Segoe UI", Verdana, sans-serif;
+        font-weight: bold;
         position: relative;
-        padding-block: 16px;
+
 
         &::before {
           content: "";
@@ -84,6 +85,34 @@ export const Navegação = styled.nav`
         }
       }
     }
+
+    .dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_TWO};
+    box-shadow: 4px 5px 8px ${({ theme }) => theme.COLORS.BOX_SHADOW};
+    border-radius: 8px;
+    list-style: none;
+    z-index: 10;
+}     
+.dropdown:hover .dropdown-menu {
+        display: block; 
+    }
+
+.dropdown-menu li {
+    padding: 2px 16px;
+}
+
+.dropdown-menu a {
+
+    display: block;
+}
 
     @media (max-width: ${breakpoints.xxxl}){
       li a {
@@ -149,7 +178,7 @@ export const Navegação = styled.nav`
       top: 100px;
       left: -100%;
       width: 50%;
-      height: 55%;
+      height: 95%;
       background-color: ${({ theme }) => theme.COLORS.GRAY};
       transition: left 0.3s ease-in-out;
       flex-direction: column;
@@ -163,8 +192,12 @@ export const Navegação = styled.nav`
 
     @media (max-width: ${breakpoints.xs}) {
       width: 50%;
-      height: 60%;
+      height: 75%;
     }
+
+    .dropdown-menu li {
+    padding: 5px 16px;
+}
   }
 `;
 
