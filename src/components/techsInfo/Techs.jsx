@@ -1,15 +1,14 @@
 import React from "react";
 import Slider from "react-slick";
-import { FaVuejs, FaBootstrap, FaGithub, FaFigma } from "react-icons/fa";
+import { FaVuejs, FaBootstrap, FaGithub, FaFigma, FaJs  } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
-import { GrJs } from "react-icons/gr";
 import { RiReactjsLine } from "react-icons/ri";
 import { CarouselContainer, Slide } from "./style";
 
 
 export function Techs() {
   const data = [
-    { id: "1", icon: <GrJs />, name: "JavaScript" },
+    { id: "1", icon: <FaJs />, name: "JavaScript" },
     { id: "2", icon: <FaVuejs />, name: "Vue.js" },
     { id: "3", icon: <BiLogoTypescript />, name: "TypeScript" },
     { id: "4", icon: <RiReactjsLine />, name: "React.js" },

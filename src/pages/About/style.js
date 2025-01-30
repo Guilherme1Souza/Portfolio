@@ -24,10 +24,12 @@ export const AboutInfo = styled.div`
   justify-content: space-around;
   gap: 180px;
   align-items: center;
+  margin-top: 50px;
 
   .textInfo {
     font-size: 20px;
     margin-left: 185px;
+   
     text-align: justify;
     width: 2000px;
   }
