@@ -68,10 +68,10 @@ export const Navegação = styled.nav`
         &::before {
           content: "";
           position: absolute;
-          bottom: 0;
+          bottom: -5px;
           left: 0;
           width: 0;
-          height: 3px;
+          height: 2px;
           background-color: ${({ theme }) => theme.COLORS.BLUE};
           transition: width 0.3s ease-in-out;
         }
