@@ -1,8 +1,8 @@
 import { Container, Sidebar, ExperienceContent, ExperienceItem, Title, Description, TechsList, FunctionItem, Cargo, Date} from './style';
-import { Buttons } from '../../components/hero/style';
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
+import { Buttons } from '../../pages/Home/style';
 
 export function ExperienceSection({ experiences, onExperienceClick, selectedExperience }) {
     return (

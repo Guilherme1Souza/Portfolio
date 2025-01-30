@@ -9,6 +9,16 @@ export const AboutTitle = styled.h2`
   }
 `;
 
+export const AboutText = styled.div`
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 45px;
+      margin-top:50px;
+    }
+`;
+
 export const AboutInfo = styled.div`
   display: flex;
   justify-content: space-around;
